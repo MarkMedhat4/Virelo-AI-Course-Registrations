@@ -222,15 +222,17 @@ const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzUbCwZY1mMVs5xJTY8e
 
     try {
       if (SCRIPT_URL && SCRIPT_URL.trim()) {
-        const res = await fetch(SCRIPT_URL, {
+        // Apps Script Web Apps don't send an Access-Control-Allow-Origin header,
+        // so the browser blocks reading the response even though the request
+        // itself reaches the script and the row gets saved. mode: "no-cors"
+        // tells the browser we're not going to try to read the response, which
+        // avoids it treating that as a failed request.
+        await fetch(SCRIPT_URL, {
           method: "POST",
-          headers: { "Content-Type": "text/plain;charset=utf-8" }, // avoids CORS preflight
+          mode: "no-cors",
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
           body: JSON.stringify(payload),
         });
-        const result = await res.json().catch(() => ({ status: "success" }));
-        if (result.status && result.status !== "success") {
-          throw new Error(result.message || "Submission failed");
-        }
       } else {
         console.warn("SCRIPT_URL is empty — fill it in js/script.js. Payload:", payload);
       }
