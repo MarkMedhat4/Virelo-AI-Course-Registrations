@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Virelo Academy | كورس أساسيات الذكاء الاصطناعي للأطفال</title>
+<meta name="description" content="تعلم كيف تستخدم الذكاء الاصطناعي بطريقة صحيحة، وابدأ في صناعة الصور والقصص والمشاريع الخاصة بك. كورس عملي للأطفال من الصف الرابع حتى السادس الابتدائي." />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Virelo Academy — أساسيات الذكاء الاصطناعي للأطفال" />
+<meta property="og:description" content="تعلم كيف تستخدم الذكاء الاصطناعي بطريقة صحيحة، وابدأ في صناعة الصور والقصص والمشاريع الخاصة بك." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="assets/images/logo.jpg" />
+
+<link rel="icon" href="assets/images/logo.jpg" type="image/jpeg" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;600;700;800;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet" />
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ===================== LOADING SCREEN ===================== -->
+<div id="loader" class="loader" aria-hidden="true">
+  <img src="assets/images/logo.jpg" alt="" class="loader__logo" />
+  <div class="loader__mark">
+    <span class="loader__node"></span>
+    <span class="loader__node"></span>
+    <span class="loader__node"></span>
+  </div>
+</div>
+
+<!-- ===================== NAVBAR ===================== -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner container">
+    <a href="#top" class="navbar__brand">
+      <img src="assets/images/logo.jpg" alt="Virelo Academy" class="navbar__logo" />
+      <span class="navbar__brand-text">Virelo <em>Academy</em></span>
+    </a>
+
+    <nav class="navbar__links" id="navLinks">
+      <a href="#hero" class="navbar__link">الرئيسية</a>
+      <a href="#timeline" class="navbar__link">خطة الكورس</a>
+      <a href="#register" class="navbar__link">التسجيل</a>
+      <a href="#info" class="navbar__link">تفاصيل الكورس</a>
+    </nav>
+
+    <a href="#register" class="btn btn--primary btn--sm navbar__cta">سجل الآن</a>
+
+    <button class="navbar__burger" id="burger" aria-label="فتح القائمة" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero__glow hero__glow--blue" aria-hidden="true"></div>
+    <div class="hero__glow hero__glow--purple" aria-hidden="true"></div>
+    <div class="hero__glow hero__glow--green" aria-hidden="true"></div>
+
+    <div class="hero__float" aria-hidden="true">
+      <span class="float-node" style="--i:0">🤖</span>
+      <span class="float-node" style="--i:1">💬</span>
+      <span class="float-node" style="--i:2">🎨</span>
+      <span class="float-node" style="--i:3">📚</span>
+      <span class="float-node" style="--i:4">🎬</span>
+    </div>
+
+    <div class="container hero__inner">
+      <span class="eyebrow reveal">كورس معتمد من Virelo Academy</span>
+      <h1 class="hero__title reveal">أساسيات الذكاء الاصطناعي <span class="text-accent">للأطفال</span></h1>
+      <p class="hero__desc reveal">
+        تعلم كيف تستخدم الذكاء الاصطناعي بطريقة صحيحة، وابدأ في صناعة الصور
+        والقصص والمشاريع الخاصة بك.
+      </p>
+      <div class="hero__actions reveal">
+        <a href="#register" class="btn btn--primary btn--lg btn--ripple">سجل الآن</a>
+      </div>
+    </div>
+
+    <a href="#timeline" class="scroll-cue" aria-label="مرر للأسفل">
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ===================== TIMELINE ===================== -->
+  <section class="timeline-section" id="timeline">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow eyebrow--dark">خطة الرحلة</span>
+        <h2 class="section-title">From Curiosity to Creation 🚀</h2>
+      </div>
+
+      <ol class="timeline" id="timelineList">
+        <li class="timeline__item">
+          <div class="timeline__marker"><span class="timeline__icon">🤖</span></div>
+          <div class="timeline__card">
+            <span class="timeline__week">الأسبوع ١</span>
+            <h3 class="timeline__title">What is AI?</h3>
+            <p class="timeline__text">تعرف على الذكاء الاصطناعي واستخداماته.</p>
+          </div>
+        </li>
+
+        <li class="timeline__item">
+          <div class="timeline__marker"><span class="timeline__icon">💬</span></div>
+          <div class="timeline__card">
+            <span class="timeline__week">الأسبوع ٢</span>
+            <h3 class="timeline__title">Smart Prompting</h3>
+            <p class="timeline__text">إزاي تسأل الـ AI بالطريقة الصح.</p>
+          </div>
+        </li>
+
+        <li class="timeline__item">
+          <div class="timeline__marker"><span class="timeline__icon">🎨</span></div>
+          <div class="timeline__card">
+            <span class="timeline__week">الأسبوع ٣</span>
+            <h3 class="timeline__title">Create with AI</h3>
+            <p class="timeline__text">اصنع صور، قصص، وشخصيات.</p>
+          </div>
+        </li>
+
+        <li class="timeline__item">
+          <div class="timeline__marker"><span class="timeline__icon">📚</span></div>
+          <div class="timeline__card">
+            <span class="timeline__week">الأسبوع ٤</span>
+            <h3 class="timeline__title">Learn Faster</h3>
+            <p class="timeline__text">استخدم AI في المذاكرة، التلخيص، والشرح.</p>
+          </div>
+        </li>
+
+        <li class="timeline__item">
+          <div class="timeline__marker"><span class="timeline__icon">🎬</span></div>
+          <div class="timeline__card">
+            <span class="timeline__week">الأسبوع ٥</span>
+            <h3 class="timeline__title">Build Your Project</h3>
+            <p class="timeline__text">أنشئ مشروعك الأول باستخدام AI.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===================== REGISTRATION FORM ===================== -->
+  <section class="register-section" id="register">
+    <div class="container register__inner">
+
+      <div class="section-head reveal">
+        <span class="eyebrow eyebrow--dark">التسجيل</span>
+        <h2 class="section-title">سجل الآن</h2>
+      </div>
+
+      <div class="register__layout">
+
+        <form id="registerForm" class="form-card reveal" novalidate>
+
+          <!-- بيانات الطالب -->
+          <fieldset class="form-fieldset">
+            <legend><i class="fa-solid fa-child"></i> بيانات الطالب</legend>
+
+            <div class="form-field form-field--floating">
+              <input type="text" id="studentName" name="studentName" placeholder=" " autocomplete="name" required />
+              <label for="studentName">الاسم الثلاثي <span class="req">*</span></label>
+              <span class="form-error" id="err-studentName"></span>
+            </div>
+
+            <div class="form-field form-field--floating">
+              <select id="grade" name="grade" required>
+                <option value="" disabled selected></option>
+                <option value="الصف الرابع الابتدائي">الصف الرابع الابتدائي</option>
+                <option value="الصف الخامس الابتدائي">الصف الخامس الابتدائي</option>
+                <option value="الصف السادس الابتدائي">الصف السادس الابتدائي</option>
+              </select>
+              <label for="grade">الصف الدراسي <span class="req">*</span></label>
+              <span class="form-error" id="err-grade"></span>
+            </div>
+          </fieldset>
+
+          <!-- بيانات ولي الأمر -->
+          <fieldset class="form-fieldset">
+            <legend><i class="fa-solid fa-people-roof"></i> بيانات ولي الأمر</legend>
+
+            <div class="form-field form-field--floating">
+              <input type="text" id="parentName" name="parentName" placeholder=" " autocomplete="name" required />
+              <label for="parentName">اسم ولي الأمر <span class="req">*</span></label>
+              <span class="form-error" id="err-parentName"></span>
+            </div>
+
+            <div class="form-field form-field--floating">
+              <input type="tel" id="parentPhone" name="parentPhone" placeholder=" " inputmode="tel" autocomplete="tel" required />
+              <label for="parentPhone">رقم هاتف ولي الأمر (واتساب) <span class="req">*</span></label>
+              <span class="form-error" id="err-parentPhone"></span>
+            </div>
+          </fieldset>
+
+          <!-- أسئلة سريعة -->
+          <fieldset class="form-fieldset">
+            <legend><i class="fa-solid fa-circle-question"></i> أسئلة سريعة</legend>
+
+            <div class="form-field">
+              <span class="radio-label">هل لدى الطالب خبرة سابقة في الكمبيوتر؟</span>
+              <div class="radio-group" role="radiogroup">
+                <label class="radio-pill">
+                  <input type="radio" name="computerExperience" value="نعم" required />
+                  <span>نعم</span>
+                </label>
+                <label class="radio-pill">
+                  <input type="radio" name="computerExperience" value="لا" />
+                  <span>لا</span>
+                </label>
+              </div>
+              <span class="form-error" id="err-computerExperience"></span>
+            </div>
+
+            <div class="form-field">
+              <span class="radio-label">هل لدى الطالب جهاز كمبيوتر أو لابتوب؟</span>
+              <div class="radio-group" role="radiogroup">
+                <label class="radio-pill">
+                  <input type="radio" name="hasComputer" value="نعم" required />
+                  <span>نعم</span>
+                </label>
+                <label class="radio-pill">
+                  <input type="radio" name="hasComputer" value="لا" />
+                  <span>لا</span>
+                </label>
+              </div>
+              <span class="form-error" id="err-hasComputer"></span>
+            </div>
+          </fieldset>
+
+          <button type="submit" class="btn btn--primary btn--lg btn--block btn--ripple" id="submitBtn">
+            <span class="btn__label">سجل الآن</span>
+            <span class="btn__spinner" aria-hidden="true"></span>
+          </button>
+          <p class="form-note"><i class="fa-solid fa-lock"></i> بياناتكم آمنة ولن تُستخدم إلا للتواصل بخصوص الكورس.</p>
+        </form>
+
+        <!-- ===================== COURSE INFO CARD ===================== -->
+        <aside class="info-card reveal" id="info">
+          <h3 class="info-card__title">تفاصيل الكورس</h3>
+
+          <div class="info-row">
+            <span class="info-row__icon info-row__icon--green"><i class="fa-solid fa-sack-dollar"></i></span>
+            <div>
+              <span class="info-row__label">السعر</span>
+              <p class="info-row__value">💰 السعر بعد خصم 200 جنيه</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <span class="info-row__icon info-row__icon--blue"><i class="fa-regular fa-calendar"></i></span>
+            <div>
+              <span class="info-row__label">مدة الكورس</span>
+              <p class="info-row__value">📅 شهرين</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <span class="info-row__icon info-row__icon--purple"><i class="fa-solid fa-location-dot"></i></span>
+            <div>
+              <span class="info-row__label">العنوان</span>
+              <p class="info-row__value">
+                📍 <a href="https://www.facebook.com/profile.php?id=100085412768099" target="_blank" rel="noopener" class="info-link">
+                 فيوتشر<i class="fa-brands fa-facebook"></i>
+                </a>
+              </p>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <img src="assets/images/logo.jpg" alt="Virelo Academy" class="navbar__logo" />
+      <span class="navbar__brand-text">Virelo <em>Academy</em></span>
+    </div>
+    <p class="footer__copy">© <span id="year"></span> Virelo Academy. جميع الحقوق محفوظة.</p>
+  </div>
+</footer>
+
+<!-- ===================== SUCCESS MODAL ===================== -->
+<div class="modal-overlay" id="successModal" aria-hidden="true">
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="إغلاق">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <div class="modal-check">
+      <svg viewBox="0 0 52 52" class="modal-check__svg">
+        <circle class="modal-check__circle" cx="26" cy="26" r="24" fill="none" />
+        <path class="modal-check__mark" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+      </svg>
+    </div>
+    <h3 id="modalTitle" class="modal-title">تم تسجيل بياناتك بنجاح</h3>
+    <p class="modal-text">وسوف يتم التواصل معك قريباً.</p>
+    <button class="btn btn--primary" id="modalOk">تمام</button>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
